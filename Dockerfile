@@ -1,6 +1,6 @@
 FROM node:15
 WORKDIR /app
-COPY pacakge*.json .
+COPY package*.json .
 RUN npm install
 COPY . .
 CMD ["node","."]
