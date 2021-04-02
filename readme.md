@@ -4,9 +4,9 @@ This project runs a web server which displays a markdown file.
 ## Docker
 With docker, you should run
 ```bash
-docker run \
+docker run -it -d \
     -p <port number>:<port number> \
-    -e port=<port number> \
+    -e PORT=<port number> \
     -v /path/to/markdown.md:/app/web.md \
     marnixah/markdown-website:latest
 ```
