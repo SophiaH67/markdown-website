@@ -1,6 +1,6 @@
 const http = require('http');
 
-const port = 1234;
+const port = process.env.PORT || 1234;
 
 const requestListener = function (req, res) {
     res.writeHead(200);
